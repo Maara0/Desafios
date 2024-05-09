@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pb-br">
+    <head>
+        <title>Decodificador de texto</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    </head>
+    <body>
+    <main>
+        <section>
+            <img class="lupa" src="./imagem/lupa.jpeg" alt="Logo" height="82" width="82" borde-radios>
+            <textarea name="" id="input" class="text-area" cols="8" rows="8" placeholder="Digite o texto que você deseja criptografar ou descriptografa."></textarea>
+            <div>
+                <div class="alerta">
+                    <span class="alerta-icon"> 🛈 Apenas letras minúsculas e sem acentos.</span>
+                </div>
+                <div id="buttons">
+                    <button id="cripto">Criptografar</button>
+                    <button id="descripto">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+        <aside>
+            <div id="mensagem">
+                <textarea readonly id="output" placeholder="Nenhuma mensagem encontrada" ></textarea>
+                <button id="copiar">Copiar</button>
+            </div>
+        </aside>
+    </main>
+    <script src="./script.js"></script>
+    </body>
+</html>
